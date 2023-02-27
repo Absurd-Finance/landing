@@ -14,125 +14,154 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Righteous);
-      @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
-      img {
-        width: 100%;
-      }
+@import url(https://fonts.googleapis.com/css?family=Righteous|Raleway:300,700);
+img {
+  width: 100%;
+}
 
-      section {
-        background: #247BA0;
-        font-family: "Raleway";
-        font-size: 16px;
-        line-height: 22px;
-        min-height: 100vh;
-      }
+section {
+  background: #333333;
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 100vh;
+}
 
-      .border-fixed {
-        position: fixed;
-        top: 20px;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        border: 5px solid #F8F272;
-        z-index: 90;
-        mix-blend-mode: multiply;
-        pointer-events:none;
-      }
+.col {
+  display: flex;
+  align-items: center;
+}
 
-      .content {
-        z-index: 100;
-        max-width: 100%;
-        overflow: hidden;
-        position: relative;
-      }
+.border-fixed {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  border: 5px solid #cccccc;
+  z-index: 90;
+  mix-blend-mode: multiply;
+  pointer-events:none;
+}
 
-      h1 {
-        font-size: 90px;
-        color: #EF6F6C;
-        font-weight: 700;
-        font-family: "Righteous";
-        margin-top: 90px;
-        margin-bottom: 30px;
-      }
+.content {
+  z-index: 100;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
-      h2 {
-        font-size: 25px;
-        color: #F9F8F8;
-        line-height: 35px;
-      }
+h1 {
+  font-size: 90px;
+  color: #999999;
+  font-weight: 700;
+  font-family: "Righteous";
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
 
-      p {
-        padding: 30px 0;
-        color: #F9F8F8;
-      }
+h2 {
+  font-size: 25px;
+  color: #cccccc;
+  line-height: 35px;
+  text-shadow: 2px 2px 4px white;
+}
 
-      small {
-        color: #A8E0FF!important;
-      }
+p {
+  padding: 30px 0;
+  color: #cccccc;
+}
 
-      a.button {
-        border-radius: 2;
-        border: 2px solid #F9F8F8;
-        padding: 5% 10%;
-        margin: 10px 0;
-        color: #F9F8F8;
-        font-family: "Raleway";
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 14px;
-        display: block;
-        text-align: center;
-        position: relative;
-      }
+small {
+  color: #999999!important;
+}
 
-      a.button:hover {
-        top: 2px;
-        text-decoration: none;
-        border: 2px solid #EF6F6C;
-        color: #EF6F6C;
-      }
+a.button {
+  border-radius: 2;
+  border: 2px solid #cccccc;
+  padding: 5% 10%;
+  margin: 10px 0;
+  color: #cccccc;
+  font-family: "Raleway";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  position: relative;
+}
 
-      .balloon {
-        margin: 0!important;
-        padding: 0!important;
-        background: url(https://scene360.com/wp-content/uploads/2014/01/deskriptiv-03.jpg) no-repeat top left;
-        background-attachment: fixed;
-        background-size: contain;
-        min-height: 100vh;
-        position: relative;
-      }
+a.button:hover {
+  top: 2px;
+  text-decoration: none;
+  border: 2px solid #999999;
+  color: #999999;
+}
 
-      .max-width {
-        width: 90%;
-        margin: 0 auto;
-      }
+.balloon {
+  margin: 0!important;
+  padding: 0!important;
+  background: url(https://scene360.com/wp-content/uploads/2014/01/deskriptiv-03.jpg) no-repeat top left;
+  background-attachment: fixed;
+  background-size: contain;
+  min-height: 100vh;
+  position: relative;
+}
 
-      @media (max-width: 767px) {
-        .balloon {
-          background-size: cover;
-          background-position: center center;
-          width: 100%;
-          height: 100%;
-        }
-        h1 {
-          margin: -35vw 0 0 20px;
-          font-size: 28vw;
-        }
-        .max-width {
-          margin: 50px auto;
-        }
-      }
+.max-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+  small {
+    margin-top: 15px;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .balloon {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  a.button {
+    padding: 3% 6%;
+  }
+  h1 {
+    font-size: 28vw;
+  }
+  h2 {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  p {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  .max-width {
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22vw;
+  }
+}
     </style>
   </head>
   <body>
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-12 balloon">
+          <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="balloon"></div>
           </div>
-          <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="col-md-5 col-sm-5 col-xs-12 text-center">
             <h1>Absurd<small>money</small></h1>
             <div class="max-width">
               <h2 class="animated slideInUp">Banking, reimagined</h2>
