@@ -2,45 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Absurd finance - banking, reimagined</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Absurd finance | Banking, reimagined">
+    <meta name="description" content="A fully licensed bank based on blockchain technology, raw tech power at your disposal">
+
+    <title>Absurd finance | Banking, reimagined</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    
     <style>
-    .wrapper {
-      height: 100vh;
-      /*This part is important for centering*/
-      display: grid;
-      place-items: center;
-    }
-
-    .typing-demo {
-      width: 31ch;
-      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid;
-      font-family: monospace;
-      font-size: 2em;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0
+      @import url(https://fonts.googleapis.com/css?family=Righteous);
+      @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+      img {
+        width: 100%;
       }
-    }
-        
-    @keyframes blink {
-      50% {
-        border-color: transparent
+
+      section {
+        background: #247BA0;
+        font-family: "Raleway";
+        font-size: 16px;
+        line-height: 22px;
+        min-height: 100vh;
       }
-    }
+
+      .border-fixed {
+        position: fixed;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        border: 5px solid #F8F272;
+        z-index: 90;
+        mix-blend-mode: multiply;
+        pointer-events:none;
+      }
+
+      .content {
+        z-index: 100;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 90px;
+        color: #EF6F6C;
+        font-weight: 700;
+        font-family: "Righteous";
+        margin-top: 90px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 25px;
+        color: #F9F8F8;
+        line-height: 35px;
+      }
+
+      p {
+        padding: 30px 0;
+        color: #F9F8F8;
+      }
+
+      small {
+        color: #A8E0FF!important;
+      }
+
+      a.button {
+        border-radius: 2;
+        border: 2px solid #F9F8F8;
+        padding: 5% 10%;
+        margin: 10px 0;
+        color: #F9F8F8;
+        font-family: "Raleway";
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        position: relative;
+      }
+
+      a.button:hover {
+        top: 2px;
+        text-decoration: none;
+        border: 2px solid #EF6F6C;
+        color: #EF6F6C;
+      }
+
+      .balloon {
+        margin: 0!important;
+        padding: 0!important;
+        background: url(https://scene360.com/wp-content/uploads/2014/01/deskriptiv-03.jpg) no-repeat top left;
+        background-attachment: fixed;
+        background-size: contain;
+        min-height: 100vh;
+        position: relative;
+      }
+
+      .max-width {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 767px) {
+        .balloon {
+          background-size: cover;
+          background-position: center center;
+          width: 100%;
+          height: 100%;
+        }
+        h1 {
+          margin: -35vw 0 0 20px;
+          font-size: 28vw;
+        }
+        .max-width {
+          margin: 50px auto;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="typing-demo">
-        We are coming soon, stay tuned!
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12 balloon">
+          </div>
+          <div class="col-md-5 col-sm-5 col-xs-12">
+            <h1>Absurd<small>money</small></h1>
+            <div class="max-width">
+              <h2 class="animated slideInUp">Banking, reimagined</h2>
+              <p>
+                Imagine a fully-licensed bank powered by DLT technology (transparent, self custodial, cheap) 
+                without all the drawbacks of web3 (gas, fiat-crypto conversion costs, terrible UX).
+                <br><br>
+              <mark>"Only those who attempt the absurd will achieve the impossible"</mark></p>
+              <a href="#" class="button" role="button">
+                Join the waiting list
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <div class="border-fixed">
     </div>
   </body>
 </html>
